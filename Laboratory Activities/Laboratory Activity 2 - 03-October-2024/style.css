@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+
+:root {
+    --clr-pink: #EA3061;
+    --clr-purple: #5350A1;
+    --clr-beige: #EBE6D3;
+    --clr-black: #151514;
+    --clr-transparent-beige: #ebe6d3cc;
+
+    font-size: 12px;
+}
+
+
+h1 {
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: var(--clr-beige);
+    font-family: "Squada One", sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+h4 {
+    margin: 0.5%;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+h1, h3 {
+    margin: 0%;
+}
+
+h3, h4, .hidden-container ul, 
+.hidden-container blockquote,
+.vision-img {
+    font-family: "Pangolin", cursive;;
+}
+
+.header2 h3 {
+    color: var(--clr-pink);
+}
+
+h1, h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(assets/grid-bg.jpg);
+}
+
+header, .content-container {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 2%;
+}
+
+body, .vision-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.header1 {
+    width: 100%;
+    padding: 0% 3%;
+    background-color: var(--clr-purple);
+}
+
+.header2 {
+    gap: 0.2rem;
+    display: grid;
+    background-color: var(--clr-purple);
+    grid-template-columns: 9rem auto 9rem;
+}
+
+.header2 div {
+    padding: 1% 2%;
+    flex-direction: row;
+    background-color: var(--clr-beige);
+}
+
+.header2, .header3 {
+    width: 95%;
+    border-style: solid;
+    border-width: 0.2rem;
+    box-sizing: border-box;
+    border-color: var(--clr-purple);
+}
+
+.main-container {
+    width: 50%;
+    height: 85%;
+    border-width: 2px;
+    border-radius: 1%;
+    border-style: solid;
+    border-color: var(--clr-black);
+    background-color: var(--clr-beige);
+    padding: 1% 0%;
+}
+
+body, header, .main-container {
+    flex-direction: column;
+}
+
+body, header, .main-container, .content-container, 
+.vision-container, .button-container, .hidden, 
+.header2 div {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    padding: 0% 2%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vision-container {
+    width: 45%;
+    height: 15rem;
+    padding: 1% 1% 1% 0%;
+    box-sizing: border-box;
+    margin: 0.8%;
+}
+
+.vision-container img {
+    width: 8rem;
+    height: auto;
+}
+
+.even-container {
+    background-color: var(--clr-purple);
+}
+
+.odd-container {
+    background-color: var(--clr-pink);
+}
+
+.vision-img {
+    width: 90%;
+    height: 100%;
+    color: var(--clr-beige);
+}
+
+.seventeen {
+    background-image: url(assets/seventeen.jpg);
+}
+
+.ikon {
+    background-image: url(assets/ikon.jpg);
+}
+
+.travel {
+    background-image: url(assets/travel.jpg);
+}
+
+.graduate {
+    background-image: url(assets/graduation.jpg);
+}
+
+.cybersecurity {
+    background-image: url(assets/cybersecurity.jpg);
+}
+
+.concert {
+    background-image: url(assets/seventeen_concert.jpg);
+}
+
+.mid-button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+#button-goals, #button-motto {
+    background-color: var(--clr-pink);
+}
+
+#button-likes {
+    background-color: var(--clr-purple);
+}
+
+.button-container {
+    width: 15%;
+    height: auto;
+    margin-bottom: 1%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hidden-container {
+    height: 100%;
+    display: none;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+}
+
+#goals-container {
+    background-image: url(assets/goals-bg.png);
+}
+
+#likes-container {
+    border-color: var(--clr-purple);
+    background-image: url(assets/likes-bg.png);
+}
+
+#motto-container {
+    background-image: url(assets/motto-bg.png);
+}
+
+#goals-container, #motto-container {
+    border-color: var(--clr-pink);
+}
+
+#goals-container, #likes-container {
+    margin-right: 1rem;
+}
+
+#goal-container, #likes-container, #motto-container {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 20rem;
+}
+
+.hidden-container ul {
+    list-style: disc;
+}
+
+.hidden-container blockquote {
+    margin: 0%;
+}
+
+.hidden-container ul, .hidden-container blockquote {
+    font-size: 1.3rem;
+    color: var(--clr-black);
+    background-color: var(--clr-transparent-beige);
+}
+
+.hidden {
+    width: 95%;
+    height: max-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+}
+
+@media (max-width: 980px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3, h4, .hidden-container ul, .hidden-container blockquote {
+        font-size: 1rem;
+    }
+
+    .header2 div img {
+        width: 3rem;
+    }
+
+    .hidden {
+        margin: 1rem;
+    }
+
+    .main-container {
+        width: 90%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    .content-container, .hidden {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .content-container, .main-container {
+        justify-content: safe center;
+    }
+    
+    .hidden-container {
+        margin: 1% 1%;
+    }
+    
+    .vision-container, .hidden-container {
+        width: 90%;
+        height: max-content;
+    }
+}

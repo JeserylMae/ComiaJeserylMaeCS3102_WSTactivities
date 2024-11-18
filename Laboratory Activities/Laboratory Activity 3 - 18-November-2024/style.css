@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Delius&display=swap');
+
+
+:root {
+    --clr--tangerine: #EE6A43;
+    --clr-rosewater: #FCECDF;
+    --clr-dark: #292929;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: var(--clr-dark);
+}
+
+.container {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0rem 2rem 1.5rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--clr-rosewater);
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Coiny", system-ui;
+    align-self: center;
+    text-transform: uppercase;
+    color: var(--clr--tangerine);
+}
+
+.container div, .container textarea {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Delius", cursive;
+    color: black;
+}
+
+textarea {
+    width: 40rem;
+    height: 18rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--clr-rosewater);
+    border-color: gray;
+    border-radius: 0.5rem;
+}
+
+div {
+    align-self: flex-start;
+}
